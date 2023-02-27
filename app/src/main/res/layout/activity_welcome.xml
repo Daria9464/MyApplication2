@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_welcome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C385EDE3"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="384dp"
+        android:layout_height="122dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Welcome to the App! The App is LOCKED!"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/username_editText"
+        android:layout_width="358dp"
+        android:layout_height="71dp"
+        android:layout_below="@id/welcome_text"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Enter username"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/unlock_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username_editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Unlock" />
+
+</RelativeLayout>
